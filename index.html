@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Programação Orientada a Objetos</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style>
+			*{font-size: 26px !important; text-align: left;}
+			strong{color: #f76300;}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Programação Orientada a Objetos</h3>
+					<h5>Professor Clemilton Lima de Souza</h5>
+				</section>
+				<section>
+					<section id="ementa-1">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Introdução
+								<ul>
+									<li>Modelagem de Sistemas*</li>
+									<li>Fases do Desevolvimento*</li>
+									<li>Requisitos de Sistemas*</li>
+									<li>Diagramas da Aplicação*</li>
+									<li>Casos de Uso*</li>
+									<li>Relacionamentos*</li>
+								</ul>
+							</li>
+							<li>Comparativo
+								<ul>
+									<li><a href="#procedural">Programação Procedural</a></li>
+									<li><a href="#orientada">Programação Orientada à Objeto</a></li>
+								</ul>			
+							</li>
+							<li><a href="vantagens">Vantagens</a></li>
+							<li><a href="desvantagens">Desvantagens</a></li>
+							<li>Conceitos
+								<ul>
+									<li><a href="#classes">Classes</a></li>
+									<li><a href="#objetos">Objetos</a></li>
+									<li><a href="#instancias">Instâncias</a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section id="ementa-2">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Códificando
+								<ul>
+									<li>Classes
+										<ul>
+											<li><a href="#classe-c">C++</a></li>
+											<li><a href="#classe-java">Java</a></li>
+											<li><a href="#classe-phyton">Python</a></li>
+										</ul>
+									</li>
+									<li><a href="#cod-instancias">Instâncias</a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section id="ementa-3">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Conceitos
+								<ul>
+									<li><a href="#empacotamento">Empacotamento</a></li>
+									<li><a href="#importacao">Importação</a></li>
+								</ul>
+							</li>
+							<li>Codificando
+								<ul>
+									<li><a href="#cod-pacote">Definição de Pacotes</li>
+									<li><a href="#cod-importacao">Importação de Classes</li>
+								</ul>
+							</li>
+							<li>Conceitos
+								<ul>	
+									<li><a href="#def-comp">Associação|Composição</a></li>
+									<li><a href="#def-her">Herança</a>
+										<ul>
+											<li><a href="#her-simples">Simples</a></li>
+											<li><a href="#her-multipla">Multipla</a></li>
+											<li><a href="#her-java">No Java</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section id="ementa-4">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Codificando
+								<ul>
+									<li>Associação|Composição
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+									<li>Herança Simples
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+									<li>Herança Multipla
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Conceitos
+								<ul>
+									<li>Construtores
+										<ul>
+											<li>Construtor Vazio</li>
+											<li>Construtor Definido</li>
+											<li>Construtor de Classe em Associação|Composição</li>
+											<li>Construtor de Classe em Herança</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section id="ementa-5">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Conceitos
+								<ul>
+									<li>Destrutores
+										<ul>
+											<li>Destrutor Vazio</li>
+											<li>Destrutor Definido</li>
+											<li>Destrutor de Classe em Associação|Composição</li>
+											<li>Destrutor de Classe em Herança</li>
+											<li>Garbage Collector</li>
+										</ul>
+									</li>
+						</ul>
+							</li>
+							<li>Codificando
+								<ul>
+									<li>Construtores
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+									<li>Destrutores
+										<ul>
+											<li>C++</li>
+											<li>Python</li>
+										</ul>
+								</ul>
+						</ul>
+					</section>
+					<section id="ementa-6">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Conceitos
+								<ul>
+									<li>Modificadores de Acesso
+										<ul>
+											<li>public</li>
+											<li>default</li>
+											<li>protected</li>
+											<li>private</li>
+											<li>abstract</li>
+											<li>final</li>
+											<li>static</li>
+										</ul>
+									</li>
+									<li>Encapsulamento</li>
+									<li>Polimorfismo</li>
+								</ul>
+							</li>
+							<li>Codificando
+								<ul>
+									<li>Modificadores de Acesso
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+										</ul>
+									</li>
+									<li>Encapsulamento
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section id="ementa-7">
+						<h6>Ementa</h6>
+						<ul>
+							<li>Codificando
+								<ul>
+									<li>Polimorfismo
+										<ul>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Conceitos
+								<ul>
+									<li>Modelo de Desenvolvimento M.V.C</li>
+									<li>G.U.I</li>
+									<li>Glade</li>
+								</ul>
+							</li>
+							<li>Codificando
+								<ul>
+									<li>Criando classes de acordo com o padrão M.V.C</li>
+									<li>Criando aplicações com Interface Gráfica</li>
+									
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section id="procedural">
+						<h6>Programação Procedural</h6>
+						<p>Paradigma de programação baseado no conceito de chamadas a procedimentos. Procedimentos também podem ser chamados de rotinas, subrotinas, métodos ou funções. Simplesmente contêm um conjunto de passos computacionais a serem executados de forma sequêncial. Um procedimento pode ser executado a qualquer momento pela aplicação principal, por outros métodos ou por ele mesmo.</p>
+						<p>Características:</p>
+							<ul>
+								<li><p>Habilidade de reutilizar o mesmo código em diferentes lugares no programa sem copiá-lo.</p></li>	
+								<li><p>Mais fácil de organizar o fluxo do programa.</p></li>
+								<li><p>Habilidade de ser fortemente modulada.</p></li>
+							</ul>
+					</section>
+					<section id="orientada">
+						<h6>Programação Orientada a Objetos</h6>
+						<p>P.O.O é um paradigma de programação que usa "objetos" compostos de atributos e métodos, juntamente com suas interações para projetar programas de computador</p>
+						<p>Organiza o mundo real como uma coleção de objetos que incorporam estruturas de dados e um conjunto de operações que manipulam estes dados e trocam informações entre si.</p>
+						<p>Características:</p>
+							<ul>
+								<li><p>Melhor habilidade de reutilizar códigos.</p></li>	
+								<li><p>Organização do fluxo do programa é mais complexa.</p></li>
+								<li><p>Aprendizagem mais complexa.</p></li>
+							</ul>
+					</section>
+				</section>
+				<section>
+					<section id="vantagens">
+							<h6>Vantagens</h6>
+							<p><strong>Vantagens Diretas</strong> – maior facilidade para reutilização de código e por conseqüência do projeto – possibilidade do desenvolvedor trabalhar em um nível mais elevado de abstração – utilização de um único padrão conceitual durante todo o processo de criação de software – maior adequação à arquitetura cliente/servidor – maior facilidade de comunicação com os usuários e com outros profissionais de informática.</p>
+							<p><strong>Vantagens Reais</strong> – ciclo de vida mais longo para os sistemas – desenvolvimento acelerado de sistemas – possibilidade de se construir sistema muito mais complexos, pela incorporação de funções prontas – menor custo para desenvolvimento e manutenção de sistemas.</p>
+					</section>
+					<section id="desvantagens">
+						<h6>Desvantagens</h6>
+						<p>Complexidade no aprendizado para desenvolvedores de linguagens estruturadas;</p>
+						<p>Maior uso de memória (heap), por exemplo para aplicações móveis em JavaME;</p>
+    						<p>Maior esforço na modelagem de um sistema OO do que estruturado (porém menor esforço de codificação, sendo uma vantagen);</p>
+    						<p>Funcionalidades limitadas por interface, quando estas estão incompletas (problemas na modelagem);</p>
+    						<p>Dependência de funcionalidades já implementadas em superclasses no caso da herança, implementações espalhadas em classes diferentes;</p>
+						</section>
+				</section>
+				<section>
+					<section id="classes">
+						<h6>Classes</h6>
+						<p >Conjunto de características e ações comuns a um grupo de indivíduos;</p>
+						<p >Molde para descrição das características e ações de um grupo de objetos;</p>
+						<p >Arquivo contendo o código fonte necessário para gerar instâncias de objetos, composições ou heranças;</p>
+						<p >Classes sempre são criadas na ideia de pluralidade, onde não se justifica criar uma classe que possui características e ações pertencentes somente a um indivíduo;</p>
+						<p >As características também podem ser chamadas de propriedades;</p>
+						<p >No código fonte, as características são chamadas de atributos, e utilizam o mesmo padrão das variáveis da linguagem utilizada;</p>
+						<p >As ações também podem ser chamados comportamentos</p>
+						<p >No código fonte, as ações são chamadas de métodos, e utilizam o mesmo padrão para procedimentos/funções ou métodos da linguagem utilizada;</p>
+						<p ><strong>O código fonte de uma classe deve conter somente os atributos e métodos referêntes à mesma. Exclusivamente em C, os arquivos de classe devem receber a extensão .cpp e .h</strong></p> 
+					</section>
+					<section id="objetos">
+						<h6>Objetos</h6>
+						<p >Indivíduo com as características e ações de uma classe;</p>
+						<p >Representante de uma classe;</p>
+						<p >Membro de uma classe;</p>
+					</section>
+					<section id="instancias">
+						<h6>Instancia</h6>
+						<p >Execução de uma classe;</p>
+						<p >Objeto ativo;</p>
+						<p >Objeto de uma classe armazenado dentro de espaço em memória para utilização na aplicação;</p>
+					</section>
+				</section>
+				<section>
+					<section id="classe-c">
+						<h6>Codificando Classes - C++</h6>
+						<p>Classe.h</p>
+						<pre><code class="hljs cpp" data-trim>class nomeClasse{
+	public:
+		//Atributos
+		tipo atributo;
+		tipo atributo;
+		tipo atributo;
+		tipo atributo;
+
+		//Métodos
+		tipoRetorno nome(Argumentos){}
+}</code></pre>
+					</section>
+					<section>
+						<h6>Codificando Classes - C++</h6>
+						<p>Classe.cpp</p>
+						<pre><code class="hljs cpp" data-trim>class nomeClasse{
+	//Atributos
+	atributo = valorInicial;
+	atributo = valorInicial;
+	atributo = valorInicial;
+	atributo = valorInicial;
+	
+	//Métodos
+	tipoRetorno nome(Argumentos){
+		//Corpo do método
+	}
+}</code></pre>
+					</section>
+					<section id="classe-java">
+						<h6>Codificando Classes - Java</h6>
+						<pre><code class="hljs java" data-trim>public class nomeClasse{
+	//Atributos
+	tipo atributo;
+	tipo atributo;
+	tipo atributo;
+	tipo atributo;
+
+	//Métodos
+	tipoRetorno nome(//Argumentos){
+		//Corpo do método
+	}
+}</code></pre>
+					</section>
+					<section id="classe-python">
+						<h6>Codificando Classes - Python</h6>
+						<pre><code class="hljs python" data-trim>class nomeClasse:
+	#Atributos
+	nomeAtributo = valorInicial
+	nomeAtributo = valorInicial
+	nomeAtributo = valorInicial
+	nomeAtributo = valorInicial
+
+	//Métodos
+	def nomeMetodo(argumentos):
+		//Corpo do Método</code></pre>
+					</section>
+				</section>
+				<section id="cod-instancias">
+						<h6>Codificando - Instâncias</h6>
+						<spam><strong>No arquivo de execução da respectiva linguagem</strong></spam>
+						<h6>C++</h6>
+						<pre><code class="hljs cpp">Classe nomeInstância; // Método 1
+nomeInstância = new Classe(); // Método 2
+// Obs.: Ambos estão corretos</code></pre>
+						<h6>Java</h6>
+						<pre><code class="hljs java">Classe nomeInstância = new Classe(); //Método 1
+// Método 2
+Classe nomeInstância; 
+nomeInstância = new Classe();
+//Obs.: Ambos estão corretos</code></pre>
+						<h6>Python</h6>
+						<pre><code class="hljs python">nomeInstância = Classe()</code></pre>
+
+				</section>
+				<section>
+					<section id="empacotamento">
+						<h6>Empacotamento</h6>
+						<p>Pacotes são unidades de organização para as classes de seu projeto.</p>	
+						<p>Também são amplamente utilizados para organização de bibliotecas padrão da linguagem ou de terceiros.</p>
+						<p>A definição do pacote deve acontecer, obrigatoriamente na primeira linha no código fonte das classes.</p>
+					</section>
+					<section id="importacao">
+						<h6>Importação</h6>
+						<p>Recurso que permite utilizarmos de código de classes que estejam em diferentes pacotes.</p>
+						<p>Também pode ser chamado de include</p>
+						<p>A importação de classes ou pacotes inteiros deve acontecer após a definição do pacote e antes da definição da classe no código fonte</p>
+					</section>
+				</section>
+				<section>
+                                        <section id="cod-pacote">
+                                                <h6>Empacotamento na prática</h6>
+                                                <h6>C++ - No arquivo Classe.h</h6>
+                                                <pre><code class="hljs cpp">#ifndef NOMEPACOTE_NOMECLASSE_H_
+#define NOMEPACOTE_NOMECLASSE_H_</code></pre>
+                                                <h6>Java</h6>
+                                                <pre><code class="hljs java">package NomePacote;</code></pre>
+                                                <h6>Python</h6>
+                                                <pre><code class="hljs python">Definição a variável de Ambiente PYTHONPATH 
+ou 
+coloca-se o arquivo da classe dentro de um diretório 
+que tenha o arquivo __init__.py </code></pre>
+				        </section>
+				        <section id="cod-importacao">
+                                                <h6>Importação na prática</h6>	
+                                                <h6>C++	</h6>
+                                                <pre><code class="hljs cpp">#include "pacote/Classe.h"</code></pre>
+                                                <h6>Java</h6>
+                                                <pre><code class="hljs java">import pacote.Classe</code></pre>
+		                                <h6>Python</h6>
+		                                <h6>Se a variável PYTHONPATH for editada</h6>
+		                                <pre><code class="hljs python">import pacote.Classe</code></pre>
+		                                <h6>Senão</h6>
+		                                <pre><code class="hljs python">from Pacote.Classe import Classe</code></pre>
+				        </section>
+				</section>
+				<section>
+					<section>
+						<h6>Composição | Associação</h6>
+						<p>É considerado Composição quando uma classe possui um atributo que seja uma instância de outra classe.</p>
+						<p>É considerado Associação quando uma classe é instânciada como atributo de outra classe.</p>
+						<p>Tanto Composição quanto Associação referem-se ao mesmo tipo de técnica, mudando somente o ponto de perspectiva.</p>
+						<p>É uma técnica para reutilização de código, que visa diminuir o tempo de desenvolvimento de aplicações em que várias classes possuem o mesmo atributo, porém não se aplica uma Herança.</p>
+						<p><strong>Utiliza o pensamento de Algo TER Algo</strong></p>
+					</section>
+					<section>
+						<h6>Herança</h6>
+					</section>
+				</section>
+			</div>
+		</div>	
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>	
+</html>
