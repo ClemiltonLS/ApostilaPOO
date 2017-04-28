@@ -436,6 +436,43 @@ que tenha o arquivo __init__.py </code></pre>
 					</section>
 					<section>
 						<h6>Herança</h6>
+						<p>É considerado Herança quando uma classe adquire atributos e métodos pertencentes a outra classe.</p>
+						<p>A classe que sede as informações, damos a nomenclatura de superclasse, classe herdada ou classe pai.</p>
+						<p>A classe que recebe as informações, damos a nomenclatura de subclasse, classe herdeira ou classe filha.</p>
+						<p>Toda herança deve ser analisada somente em pares de classes, não existindo assim o conceito de super-superclasse ou sub-subclasse</p>
+						<p>Ao analisarmos uma cadeia de herança, se usarmos como ponto de referência a ultima subclasse, denominamos de <strong>generalisação</strong> as classes que ficam acima da mesma.</p>
+						<p>Ao analisarmos uma cadeia de herança. se usarmos como ponto de referência a primeira superclasse, denominamos de <strong>especialização</strong> as classes que ficam abaixo da mesma.</p>
+						<p><strong>Utiliza o pensamento de Algo SER Algo</strong></p>
+					</section>
+					<section>
+						<h6>Tipos de Herança</h6>
+						<ul>
+							<li><strong>Herança Simples e Direta:</strong> Quando a subclasse herda as informações diretamente de sua superclasse;</li>
+							<li><strong>Herança Simples e Indireta:</strong> Quando a subclasse herda as informações da superclasse e a superclasse herda outras informações da própria superclasse. Ou seja, existe uma ou mais classes intermediando a herança;</li>
+							<li><strong>Herança Multipla e Direta:</strong> Quando a subclasse herda as informações diretamente de mais de uma superclasse;</li>
+							<li><strong>Herança Mutipla e Indireta:</strong> Quando a subclasse herda as informações de mais de uma superclasse e uma ou todas as superclasses herdam as informações de suas respectivas superclasses. Ou seja, existem uma ou mais classes intermediando a herança.</li>
+						</ul>
+						<strong>Obs.: Java NÃO possui herança multipla. Replica-se o comportamento de herança multipla com uma cadeia de heranças indiretas.</strong>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h6>Codificando Composição</h6>
+                                                <h6>C++	 - No arquivo Classe.h</h6>
+                                                <pre><code class="hljs cpp">Classe atributo;</code></pre>
+                                                <h6>Java</h6>
+                                                <pre><code class="hljs java">Classe atributo = new Classe();</code></pre>
+		                                <h6>Python</h6>
+		                                <pre><code class="hljs python">atributo = Classe()</code></pre>
+					</section>
+					<section>
+						<h6>Codificando Herança</h6>
+                                                <h6>C++	- No arquivo Classe.h</h6>
+                                                <pre><code class="hljs cpp">class SubClasse : modificador SuperClasse</code></pre>
+                                                <h6>Java</h6>
+                                                <pre><code class="hljs java">public class SubClasse extends SuperClasse</code></pre>
+		                                <h6>Python</h6>
+		                                <pre><code class="hljs python">class SubClasse(SuperClasse):</code></pre>
 					</section>
 				</section>
 			</div>
